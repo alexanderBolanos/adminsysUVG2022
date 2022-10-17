@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server.js"
+    "start": "nodemon src/server.js",
+    "sonar": "sonar-scanner.bat -D sonar.login=%SONAR_LOGIN%"
   },
   "author": "Alexander Bolanos Lima",
   "license": "ISC",

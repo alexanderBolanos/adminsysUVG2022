@@ -9,6 +9,10 @@ test("Sumando real(1.5) y real(2.5):", ()=>{
     expect(sumar(1.5, 2.5)).toBe(4);
 });
 
+test("Sumando nulls:", ()=>{
+    expect(sumar(null, null)).toBe(null);
+});
+
 
 function prueba3() {
     //estas funciones deben ser testeables: no func. asincronas
