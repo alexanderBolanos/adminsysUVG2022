@@ -7,10 +7,11 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 8080;
+const author = process.env.AUTHOR || "Extraño";
 
 app.get("/isAlive", (req, res)=>{
     console.log(">>> yes!");   
-    res.send( `hola ${process.env.api_key}`);
+    res.send( `hola ${ author }`);
 });
 
 // ------------------------------------------------
