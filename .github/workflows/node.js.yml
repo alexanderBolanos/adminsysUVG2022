@@ -29,7 +29,7 @@ jobs:
     - run: npm i jest
     - run: echo "my super secret API key is ${{secrets.MY_API_KEY}}"
     - run: npm test
-  static_testing:
+  statictesting:
     - run: echo "Running Sonarqude ..."
   documentation:
     - run: echo "Generating docs ..."
