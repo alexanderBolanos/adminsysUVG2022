@@ -3,6 +3,7 @@ Proyecto Demo para el curso Administracion y Mantenimiento de Sistemas. UVG 2022
 
 ---
 # Comandos importantes:
+- Ejecutar SonarQube local: C:\sonarqube\bin\windows-x86-64\StartSonar.bat
 
 ## Docker
 

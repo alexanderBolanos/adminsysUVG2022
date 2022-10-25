@@ -4,6 +4,7 @@ const operations = require("../operations");
 const sumar = (req, res, next) => {
     const { a, b} = req.params;
     const suma = operations.sumar(1*a,1*b);
+    console.log("sumar:",a,b,suma);
     res.json({suma: suma});
 }
 
