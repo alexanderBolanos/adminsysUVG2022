@@ -1,7 +1,7 @@
 const operations = require("../operations");
 
-const log = (key="adminSys", payload) => {
- console.info(key, JSON.stringify(payload));
+const log = (payload) => {
+ console.info("adminSys2022", JSON.stringify(payload));
 }
 
 
