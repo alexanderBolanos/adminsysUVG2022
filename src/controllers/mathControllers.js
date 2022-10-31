@@ -32,6 +32,12 @@ const multiplicar = (req, res, next) => {
 
 const dividir = (req, res, next) => {
     const {a, b} = req.params;
+
+    if(a==="0")
+    {
+        log({operation: "dividir", valorA: a, valorB: b, resultado, status:'failed'} );
+        throw new Error("División no definida");
+    }
     if(b==="0")
     {
         log( {operation: "dividir", valorA: a, valorB: b, resultado, status:'failed'} );
