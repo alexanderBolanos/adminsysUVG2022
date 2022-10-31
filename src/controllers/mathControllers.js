@@ -1,7 +1,7 @@
 const operations = require("../operations");
 
 const log = (payload) => {
- console.info("adminSys2022", JSON.stringify(payload));
+ console.info("adminSys2022-logs", JSON.stringify(payload));
 }
 
 
