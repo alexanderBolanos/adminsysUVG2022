@@ -35,18 +35,18 @@ const dividir = (req, res, next) => {
 
     if(a==="0")
     {
-        log({operation: "dividir", valorA: a, valorB: b, resultado, status:'failed'} );
+        log({operation: "dividir", valorA: a, valorB: b, resultado: null, status:'failed'} );
         throw new Error("División no definida");
     }
     if(b==="0")
     {
-        log( {operation: "dividir", valorA: a, valorB: b, resultado, status:'failed'} );
+        log( {operation: "dividir", valorA: a, valorB: b, resultado: null, status:'failed'} );
         throw new Error("Imposible dividir por 0");
     }
     const resultado = a/b;
 
     log( {operation: "dividir", valorA: a, valorB: b, resultado, status:'success'} );
-    res.json({division: a/b});
+    res.json({division: resultado});
 }
 
 exports.sumar = sumar;
