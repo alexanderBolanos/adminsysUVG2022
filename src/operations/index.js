@@ -10,5 +10,7 @@ const restar = (a, b) => {
     return  parseFloat(a)-parseFloat(b);
 }
 
+const a;
+
 exports.sumar = sumar;
 exports.restar = restar;
