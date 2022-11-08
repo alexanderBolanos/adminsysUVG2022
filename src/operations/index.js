@@ -8,7 +8,5 @@ const restar = (a, b) => {
     return parseFloat(a) - parseFloat(b);
 };
 
-const a = 1;
-
 exports.sumar = sumar;
 exports.restar = restar;
