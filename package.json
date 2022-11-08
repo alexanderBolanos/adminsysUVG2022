@@ -6,7 +6,8 @@
     "scripts": {
         "test": "jest",
         "start": "nodemon src/server.js",
-        "sonar": "sonar-scanner.bat -D sonar.login=%SONAR_LOGIN%"
+        "sonar": "sonar-scanner.bat -D sonar.login=%SONAR_LOGIN%",
+        "prepare": "husky install"
     },
     "author": "Alexander Bolanos Lima",
     "license": "ISC",
