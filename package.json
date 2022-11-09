@@ -6,13 +6,16 @@
     "scripts": {
         "test": "jest",
         "start": "nodemon src/server.js",
-        "sonar": "sonar-scanner.bat -D sonar.login=%SONAR_LOGIN%",
+        "sonar": "sonar-scanner.bat -D sonar.login=sqp_af849d5e93a6838fa67233f00ccc2dddaa896a4e",
         "prepare": "husky install"
     },
     "author": "Alexander Bolanos Lima",
     "license": "ISC",
     "dependencies": {
+        "@knuckleswtf/scribe-express": "^2.0.2",
+        "cross-var": "^1.1.0",
         "dotenv": "^16.0.3",
+        "dotenv-cli": "^6.0.0",
         "express": "^4.18.1",
         "nodemon": "^2.0.20"
     },
@@ -21,11 +24,6 @@
         "jest": "^29.1.2",
         "lint-staged": "^13.0.3",
         "prettier": "^2.7.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "lint-staged": {
         "*.js": [
