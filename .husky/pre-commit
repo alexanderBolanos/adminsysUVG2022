@@ -4,6 +4,6 @@
 npm test
 npm run sonar
 # npx pretty-quick --staged
-# npx lint-staged
+npx lint-staged
 # ng test --watch=false --browsers=ChromeHeadless
 
