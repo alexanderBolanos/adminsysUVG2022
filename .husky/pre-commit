@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm test
-npm run sonar
+# npm run sonar
 # npx pretty-quick --staged
 npx lint-staged
 # ng test --watch=false --browsers=ChromeHeadless
