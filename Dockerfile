@@ -9,7 +9,7 @@ WORKDIR /usr/app/src
 COPY package*.json ./
 
 # And Install them
-RUN npm install --production
+RUN npm install --omit=dev
 
 # Now let's copy the source files
 COPY src .

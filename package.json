@@ -7,17 +7,21 @@
         "test": "jest",
         "start": "nodemon src/server.js",
         "sonar": "sonar-scanner.bat -D sonar.login=sqp_af849d5e93a6838fa67233f00ccc2dddaa896a4e",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "swagger-autogen": "node swagger.js"
     },
     "author": "Alexander Bolanos Lima",
     "license": "ISC",
     "dependencies": {
         "@knuckleswtf/scribe-express": "^2.0.2",
+        "cors": "^2.8.5",
         "cross-var": "^1.1.0",
         "dotenv": "^16.0.3",
         "dotenv-cli": "^6.0.0",
         "express": "^4.18.1",
-        "nodemon": "^2.0.20"
+        "nodemon": "^2.0.20",
+        "swagger-autogen": "^2.22.0",
+        "swagger-ui-express": "^4.6.0"
     },
     "devDependencies": {
         "husky": "^8.0.1",
