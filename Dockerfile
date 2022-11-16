@@ -8,8 +8,8 @@ WORKDIR /usr/app/src
 # Let's copy the list of dependencie
 COPY package*.json ./
 
-# And Install them
-RUN npm install --omit=dev
+# And Install them --omit=dev
+RUN npm install
 
 # Now let's copy the source files
 COPY src .
